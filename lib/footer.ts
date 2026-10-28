@@ -94,7 +94,7 @@ export const footerSections: FooterSection[] = [
   {
     title: "Company",
     links: [
-      { label: "About Zoiko Surplus", href: "#" },
+      { label: "About Zoiko Surplus", href: "/about" },
       { label: "Our Approach", href: "#" },
       { label: "Industries Served", href: "#" },
       { label: "Corporate Information", href: "#" },
@@ -133,10 +133,13 @@ export const footerOffices = [
   {
     label: "Global Headquarters",
     lines: ["1401 21st Street, Suite R", "Sacramento, CA 95811", "United States"],
+    // The desktop design shows the address on one line.
+    inline: "1401 21st Street, Suite R Sacramento, CA 95811, US",
   },
   {
     label: "European Headquarters",
     lines: ["167–169 Great Portland Street, 5th Floor", "London W1W 5PF", "United Kingdom"],
+    inline: "167–169 Great Portland Street, 5th Floor, London W1W 5PF, UK",
   },
 ] as const;
 
