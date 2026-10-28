@@ -84,7 +84,7 @@ export const companyMenu = {
   overviewLink: { label: "Corporate information", href: "#" },
   sectionLabel: "About",
   links: [
-    { title: "About Zoiko Surplus", description: "Mission, operating role and global design.", href: "#" },
+    { title: "About Zoiko Surplus", description: "Mission, operating role and global design.", href: "/about" },
     { title: "Our Approach", description: "Governed marketplace doctrine and differentiators.", href: "#" },
     { title: "Industries Served", description: "Current and prospective sectors, clearly differentiated.", href: "#" },
     { title: "Contact", description: "General contact with privacy-safe inquiry handling.", href: "#" },

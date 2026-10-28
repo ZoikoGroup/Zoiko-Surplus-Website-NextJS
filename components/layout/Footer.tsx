@@ -3,11 +3,11 @@ import Link from "next/link";
 import FooterSection from "./FooterSection";
 import { footerLegalLinks, footerOffices, footerSections, footerSocials } from "@/lib/footer";
 
-// The design is dark on mobile and light on desktop; the two palettes are swapped through
+// Both designs are dark, with slightly different colours; the two palettes are swapped through
 // these CSS variables so the markup below only has to be written once.
 const palette =
   "[--f-head:#fff] [--f-text:#cbc2cb] [--f-note:#a99eaa] [--f-line:rgba(255,255,255,0.12)] [--f-panel:rgba(255,255,255,0.05)] [--f-accent:#f0684f] [--f-dot:rgba(255,255,255,0.22)] " +
-  "md:[--f-head:#1e2126] md:[--f-text:#4f647a] md:[--f-note:#1e2126] md:[--f-line:rgba(138,134,144,0.36)] md:[--f-panel:rgba(245,231,201,0.12)] md:[--f-accent:#926016] md:[--f-dot:#845212]";
+  "md:[--f-head:#fff] md:[--f-text:rgba(255,255,255,0.88)] md:[--f-note:#fff] md:[--f-line:rgba(138,134,144,0.36)] md:[--f-panel:rgba(245,231,201,0.12)] md:[--f-accent:#926016] md:[--f-dot:#845212]";
 
 // Icons carry their colour in the SVG, so each theme has its own file.
 function Icon({ name, size }: { name: string; size: number }) {
@@ -23,12 +23,12 @@ export default function Footer() {
   return (
     <footer className="mt-auto bg-linear-to-b from-[#edecee] to-[#f4f3f5] px-4 pt-[39px] pb-10 font-[family-name:var(--font-sora)] md:bg-none md:p-0">
       <div
-        className={`${palette} mx-auto overflow-hidden rounded-[28px] bg-[#122340] shadow-[0_30px_80px_-40px_rgba(32,22,40,0.55),0_2px_8px_rgba(32,22,40,0.08)] md:max-w-[1440px] md:rounded-t-[48px] md:rounded-b-none md:bg-[#fcfcff] md:shadow-none`}
+        className={`${palette} mx-auto overflow-hidden rounded-[28px] bg-[#122340] shadow-[0_30px_80px_-40px_rgba(32,22,40,0.55),0_2px_8px_rgba(32,22,40,0.08)] md:max-w-[1440px] md:rounded-t-[48px] md:rounded-b-none md:bg-[#0c2140] md:shadow-none`}
       >
         <div className="px-4 pt-10 pb-7 md:px-10 md:py-16 lg:p-24">
           {/* Brand + social */}
           <div className="flex flex-col gap-2.5 border-b border-(--f-line) pb-10 md:flex-row md:justify-between md:gap-10 md:pb-[51px]">
-            <div className="flex flex-col gap-2.5 md:max-w-[846px]">
+            <div className="flex flex-col gap-2.5 md:max-w-[846px] md:gap-3">
               <Link href="/" aria-label="Zoiko Surplus home" className="w-fit">
                 <span className="flex items-center gap-3 md:hidden">
                   <span className="flex size-10 items-center justify-center rounded-[11px] border border-white/[0.22] bg-[#0c2140]">
@@ -36,13 +36,15 @@ export default function Footer() {
                   </span>
                   <span className="text-xl leading-[31px] font-bold tracking-[0.4px] text-white">ZOIKO SURPLUS</span>
                 </span>
-                <Image
-                  src="/images/footer/desktop/logo.png"
-                  alt="Zoiko Surplus"
-                  width={132}
-                  height={47}
-                  className="hidden md:block"
-                />
+                <span className="hidden w-[157px] rounded-lg bg-white px-3 py-2.5 md:block">
+                  <Image
+                    src="/images/footer/desktop/logo.png"
+                    alt="Zoiko Surplus"
+                    width={133}
+                    height={47}
+                    className="h-[47px] w-[133px] p-0"
+                  />
+                </span>
               </Link>
               <p className="max-w-[677px] pt-[5px] text-[15.2px] leading-[24.32px] text-(--f-text)">
                 A global surplus commerce and disposition platform connecting enterprise supply with verified
@@ -53,7 +55,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-2.5 pt-[9px] md:w-[385px] md:shrink-0">
+            <div className="flex flex-col gap-2.5 pt-[9px] md:w-[310px] md:shrink-0">
               <p className="pb-[0.84px] text-[11.5px] leading-[17.86px] font-bold tracking-[1.382px] text-(--f-note) uppercase">
                 Official channels
               </p>
@@ -69,7 +71,7 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-              <p className="max-w-[410px] text-xs leading-[18px] text-(--f-note)">
+              <p className="max-w-[410px] text-xs leading-[18px] text-(--f-note) md:max-w-[311px]">
                 Illustrative. Channels appear as live links only once the official account, URL and brand
                 ownership are verified.
               </p>
@@ -101,11 +103,14 @@ export default function Footer() {
                     </p>
                   </div>
                   <address className="pb-[0.6px] text-[15.2px] leading-[24.32px] text-(--f-head) not-italic">
-                    {office.lines.map((line) => (
-                      <span key={line} className="block">
-                        {line}
-                      </span>
-                    ))}
+                    <span className="md:hidden">
+                      {office.lines.map((line) => (
+                        <span key={line} className="block">
+                          {line}
+                        </span>
+                      ))}
+                    </span>
+                    <span className="hidden md:block">{office.inline}</span>
                   </address>
                   <Link href="#" className="flex w-fit items-center gap-1.5 text-[13.6px] leading-[21px] font-semibold text-(--f-text)">
                     Corporate information
