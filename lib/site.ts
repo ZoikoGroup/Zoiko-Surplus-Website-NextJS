@@ -132,7 +132,7 @@ export const solutionsMenu = {
   groups: [
     {
       title: "Surplus Enterprise",
-      href: "#",
+      href: "/enterprise-overview",
       description: "Qualification, governed seller disposition and evidence.",
       links: [
         { title: "Inventory Qualification", description: "Condition, provenance and category requirements.", href: "#" },
