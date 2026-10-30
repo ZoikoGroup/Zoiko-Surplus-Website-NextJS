@@ -1,0 +1,55 @@
+name: Deploy Zoiko Surplus
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-zoiko-surplus
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Deploy to the VM over SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.GCP_SSH_HOST }}
+          username: ${{ secrets.GCP_SSH_USER }}
+          key: ${{ secrets.GCP_SSH_KEY }}
+          command_timeout: 30m
+          script_stop: true
+          script: |
+            set -e
+            APP=/var/www/zoiko-surplus/app
+            NAME=zoiko-surplus
+            PORT=3000
+            cd "$APP"
+            PREV=$(git rev-parse HEAD)
+            git fetch --quiet origin main
+            git reset --hard origin/main
+            NEW=$(git rev-parse HEAD)
+            echo "deploying ${PREV:0:7} -> ${NEW:0:7}"
+            npm ci --no-audit --no-fund || npm install --no-audit --no-fund
+            rm -rf .next.prev
+            [ -d .next ] && cp -a .next .next.prev || true
+            rollback() {
+              echo "ROLLING BACK to ${PREV:0:7}"
+              rm -rf .next
+              [ -d .next.prev ] && mv .next.prev .next
+              git reset --hard "$PREV"
+              pm2 restart "$NAME" --update-env || true
+              exit 1
+            }
+            npm run build || rollback
+            pm2 restart "$NAME" --update-env
+            sleep 6
+            code=$(curl -s -o /dev/null -w "%{http_code}" "http://127.0.0.1:$PORT/")
+            echo "health check: $code"
+            [ "$code" = "200" ] || rollback
+            rm -rf .next.prev
+            pm2 save
+            echo "DEPLOY OK: ${NEW:0:7}"
