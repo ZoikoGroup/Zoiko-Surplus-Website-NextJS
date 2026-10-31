@@ -20,7 +20,10 @@ import Faq from "@/components/home/Faq";
 import ConversionForm from "@/components/home/ConversionForm";
 import ClosingCta from "@/components/home/ClosingCta";
 
-export const metadata: Metadata = { title: "Home" };
+// The home page uses the full site title instead of the "<page> | Zoiko Surplus" template.
+export const metadata: Metadata = {
+  title: { absolute: "Zoiko Surplus | Global Surplus Inventory Marketplace" },
+};
 
 // The mobile and desktop designs stack a few sections in a different order (Capabilities before
 // the principles ribbon, Lifecycle before Private access, the form before the FAQ, ...), so the
