@@ -10,8 +10,12 @@ const sora = Sora({ subsets: ["latin"], variable: "--font-sora" });
 const hanken = Hanken_Grotesk({ subsets: ["latin"], variable: "--font-hanken" });
 
 export const metadata: Metadata = {
-  title: { default: siteConfig.name, template: `%s | ${siteConfig.name}` },
+  title: {
+    default: "Zoiko Surplus | Global Surplus Inventory Marketplace",
+    template: `%s | ${siteConfig.name}`,
+  },
   description: siteConfig.description,
+  icons: { icon: [{ url: "/images/zoikosurplus-icon-svg.svg", type: "image/svg+xml" }] },
 };
 
 // Header and Footer live here, so every page added under app/ gets them automatically.

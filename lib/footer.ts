@@ -11,7 +11,7 @@ export const footerSections: FooterSection[] = [
   {
     title: "Surplus Enterprise",
     links: [
-      { label: "Enterprise Overview", href: "#" },
+      { label: "Enterprise Overview", href: "/enterprise-overview" },
       { label: "Inventory Qualification", href: "#" },
       { label: "Disposition Planning", href: "#" },
       { label: "Recovery & Evidence", href: "#" },
