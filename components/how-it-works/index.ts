@@ -1,0 +1,15 @@
+export { default as GovernedPathHero } from "./GovernedPathHero";
+export { default as WhyItsGoverned } from "./WhyItsGoverned";
+export { default as SevenStagesPath } from "./SevenStagesPath";
+export { default as OperatingPrinciples } from "./OperatingPrinciples";
+export { default as BeforeMatchingGates } from "./BeforeMatchingGates";
+export { default as ThreeAudienceJourneys } from "./ThreeAudienceJourneys";
+export { default as RecordsThePathKeeps } from "./RecordsThePathKeeps";
+export { default as WhereCapabilitiesFit } from "./WhereCapabilitiesFit";
+export { default as MarketsAndCategoryDisclosures } from "./MarketsAndCategoryDisclosures";
+export { default as CategoryCoverage } from "./CategoryCoverage";
+export { default as RolesAndPermissions } from "./RolesAndPermissions";
+export { default as IllustrativeScenario } from "./IllustrativeScenario";
+export { default as TrustBoundaryFAQ } from "./TrustBoundaryFAQ";
+export { default as GovernedPathFAQ } from "./GovernedPathFAQ";
+export { default as ExplorePathwayCTA } from "./ExplorePathwayCTA";
