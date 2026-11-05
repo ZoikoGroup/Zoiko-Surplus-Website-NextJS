@@ -49,7 +49,7 @@ export default function CategoriesMenu({ onNavigate }: { onNavigate: () => void 
         {items.map((item) => (
           <li key={item.title}>
             <Link
-              href="#"
+              href={item.href ?? "#"}
               onClick={onNavigate}
               className="flex h-full min-h-11 flex-col gap-2 rounded-xl border border-[#e8e1da] bg-white p-4"
             >
