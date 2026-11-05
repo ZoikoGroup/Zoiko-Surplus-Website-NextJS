@@ -119,7 +119,7 @@ export default function FinalCTA() {
           {/* Bottom Visual Image: vb21.jpg */}
           <div className="relative mt-2 aspect-[4/3] w-full overflow-hidden">
             <Image
-              src="/images/become-a-verified-buyer/vb21.jpg"
+              src="/images/become-a-verified-buyer/vb33.jpg"
               alt="Ready to be considered as a buyer"
               fill
               sizes="100vw"
