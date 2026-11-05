@@ -36,6 +36,8 @@ export type CategoryMenuItem = {
   badge: CategoryBadge;
   badgeLabel: string;
   description: string;
+  // Defaults to "#" until the category page exists.
+  href?: string;
 };
 
 export const categoryMenu = {
@@ -46,6 +48,7 @@ export const categoryMenu = {
       badge: "pilot",
       badgeLabel: "Pilot",
       description: "Potential first controlled seller-private B2B category; market availability gated.",
+      href: "/apparel-footwear",
     },
     {
       title: "Food & Grocery",
@@ -58,6 +61,7 @@ export const categoryMenu = {
       badge: "overview",
       badgeLabel: "Overview",
       description: "Condition, device status and category-specific requirements.",
+      href: "/consumer-electronics",
     },
     {
       title: "Home & Lifestyle",

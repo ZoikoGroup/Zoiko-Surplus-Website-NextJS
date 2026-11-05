@@ -66,9 +66,9 @@ export const footerSections: FooterSection[] = [
     title: "Product Categories",
     links: [
       { label: "All Categories", href: "#" },
-      { label: "Apparel & Footwear", href: "#" },
+      { label: "Apparel & Footwear", href: "/apparel-footwear" },
       { label: "Food & Grocery", href: "#" },
-      { label: "Consumer Electronics", href: "#" },
+      { label: "Consumer Electronics", href: "/consumer-electronics" },
       { label: "Industrial & Business\nGoods", href: "#" },
     ],
   },
