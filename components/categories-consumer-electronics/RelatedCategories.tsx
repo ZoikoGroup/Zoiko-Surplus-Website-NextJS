@@ -10,7 +10,7 @@ const categories: CategoryCard[] = [
     badgeTone: "live",
     image: img("ce-cat-apparel.webp"),
     alt: "Rail of t-shirts in assorted colours",
-    href: "/apparel-footwear",
+    href: "/categories-apparel-footwear",
   },
   {
     title: "Food & Grocery",

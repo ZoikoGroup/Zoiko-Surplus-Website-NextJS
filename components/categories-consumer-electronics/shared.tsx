@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 export { hanken, sora, Eyebrow, SectionHeading, CheckItem, Note } from "@/components/categories/shared";
 
-export const img = (name: string) => `/images/consumer-electronics/${name}`;
+export const img = (name: string) => `/images/categories-consumer-electronics/${name}`;
 
 // Full-width section with the page's standard gutters. "dark" renders the navy band variant.
 export function Band({

@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 // Common category-page building blocks live in components/categories/shared.tsx.
 export { hanken, sora, Eyebrow, SectionHeading, CheckItem, Note } from "@/components/categories/shared";
 
-export const img = (name: string) => `/images/apparel-footwear/${name}`;
+export const img = (name: string) => `/images/categories-apparel-footwear/${name}`;
 
 // Anchor ids used by both the sections and the "On this page" sidebar.
 export const tocItems = [
