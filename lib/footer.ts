@@ -66,16 +66,16 @@ export const footerSections: FooterSection[] = [
     title: "Product Categories",
     links: [
       { label: "All Categories", href: "#" },
-      { label: "Apparel & Footwear", href: "/apparel-footwear" },
+      { label: "Apparel & Footwear", href: "/categories-apparel-footwear" },
       { label: "Food & Grocery", href: "#" },
-      { label: "Consumer Electronics", href: "/consumer-electronics" },
+      { label: "Consumer Electronics", href: "/categories-consumer-electronics" },
       { label: "Industrial & Business\nGoods", href: "#" },
     ],
   },
   {
     title: "Trust & Safety",
     links: [
-      { label: "Trust & Safety\nOverview", href: "#" },
+      { label: "Trust & Safety\nOverview", href: "/trust-and-safety" },
       { label: "Business Verification", href: "#" },
       { label: "Product Safety", href: "#" },
       { label: "Brand Protection", href: "#" },
@@ -97,7 +97,7 @@ export const footerSections: FooterSection[] = [
       { label: "About Zoiko Surplus", href: "/about" },
       { label: "Our Approach", href: "#" },
       { label: "Industries Served", href: "#" },
-      { label: "Corporate Information", href: "#" },
+      { label: "Corporate Information", href: "/company-corporate-information" },
     ],
   },
   {

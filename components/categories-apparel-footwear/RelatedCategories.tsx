@@ -10,7 +10,7 @@ const categories: CategoryCard[] = [
     badgeTone: "muted",
     image: img("af-cat-electronics.webp"),
     alt: "Headphones, smartwatch and phone on a desk beside a laptop",
-    href: "/consumer-electronics",
+    href: "/categories-consumer-electronics",
   },
   {
     title: "Home & Lifestyle",

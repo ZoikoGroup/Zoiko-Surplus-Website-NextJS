@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type PointerEvent } from "react";
 import CategoriesMenu from "./CategoriesMenu";
 import CompanyMenu from "./CompanyMenu";
 import ResourcesMenu from "./ResourcesMenu";
@@ -38,9 +38,29 @@ export default function Header() {
   }, [menu]);
 
   const toggleMenu = (name: DropdownName) => {
+    cancelClose();
     setOpen(false);
     setMenu((current) => (current === name ? null : name));
   };
+
+  // Desktop hover: open on mouse-over, close shortly after the pointer leaves both the trigger and the
+  // panel. The delay lets the cursor cross the gap between the nav button and the panel.
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const cancelClose = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    closeTimer.current = null;
+  };
+  const scheduleClose = (e: PointerEvent) => {
+    if (e.pointerType !== "mouse") return;
+    cancelClose();
+    closeTimer.current = setTimeout(() => setMenu(null), 200);
+  };
+  const hoverOpen = (name: DropdownName) => (e: PointerEvent) => {
+    if (e.pointerType !== "mouse") return;
+    cancelClose();
+    setMenu(name);
+  };
+  useEffect(() => cancelClose, []);
 
   return (
     <>
@@ -101,6 +121,8 @@ export default function Header() {
                   aria-expanded={dropdown ? menu === dropdown : undefined}
                   aria-controls={dropdown ? `${dropdown}-menu` : undefined}
                   onClick={dropdown ? () => toggleMenu(dropdown) : undefined}
+                  onPointerEnter={dropdown ? hoverOpen(dropdown) : undefined}
+                  onPointerLeave={dropdown ? scheduleClose : undefined}
                   className={`${navText} flex items-center gap-[5px] rounded-[7px] px-3 py-2.5 ${
                     dropdown && menu === dropdown ? "font-bold" : ""
                   }`}
@@ -189,10 +211,13 @@ export default function Header() {
           </nav>
         )}
 
-        {menu === "solutions" && <SolutionsMenu onNavigate={() => setMenu(null)} />}
-        {menu === "categories" && <CategoriesMenu onNavigate={() => setMenu(null)} />}
-        {menu === "resources" && <ResourcesMenu onNavigate={() => setMenu(null)} />}
-        {menu === "company" && <CompanyMenu onNavigate={() => setMenu(null)} />}
+        {/* Static wrapper so the panels stay positioned against the header; it only relays hover events. */}
+        <div onPointerEnter={(e) => e.pointerType === "mouse" && cancelClose()} onPointerLeave={scheduleClose}>
+          {menu === "solutions" && <SolutionsMenu onNavigate={() => setMenu(null)} />}
+          {menu === "categories" && <CategoriesMenu onNavigate={() => setMenu(null)} />}
+          {menu === "resources" && <ResourcesMenu onNavigate={() => setMenu(null)} />}
+          {menu === "company" && <CompanyMenu onNavigate={() => setMenu(null)} />}
+        </div>
       </header>
     </>
   );
