@@ -25,7 +25,8 @@ export default function DropdownPanel({
       id={id}
       role="region"
       aria-label={label}
-      className={`absolute inset-x-0 top-[84px] mx-auto flex max-h-[688px] w-[calc(100%-36px)] max-w-[354px] flex-col overflow-auto rounded-2xl border border-[#e8e1da] bg-white ${padding} ${gap} shadow-[0_24px_60px_-12px_rgba(30,18,36,0.28)] md:inset-x-auto md:left-1/2 md:mx-0 md:max-h-[792px] md:w-[1200px] md:max-w-[calc(100vw-32px)] md:-translate-x-1/2 ${desktopTop} ${desktopOffset}`}
+      // Desktop panels show in full with no scroll. On phones a panel only scrolls if it's taller than the screen.
+      className={`absolute inset-x-0 top-[84px] mx-auto flex max-h-[calc(100dvh-100px)] w-[calc(100%-36px)] max-w-[354px] flex-col overflow-y-auto rounded-2xl border border-[#e8e1da] bg-white ${padding} ${gap} shadow-[0_24px_60px_-12px_rgba(30,18,36,0.28)] md:inset-x-auto md:left-1/2 md:mx-0 md:max-h-none md:overflow-visible md:w-[1200px] md:max-w-[calc(100vw-32px)] md:-translate-x-1/2 ${desktopTop} ${desktopOffset}`}
     >
       {children}
     </div>

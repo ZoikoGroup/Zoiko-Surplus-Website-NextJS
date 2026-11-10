@@ -16,7 +16,7 @@ export const navItems: NavItem[] = [
   { label: "Solutions", href: "#", menu: true },
   { label: "How It Works", href: "#" },
   { label: "Categories", href: "#", menu: true },
-  { label: "Trust & Safety", href: "#" },
+  { label: "Trust & Safety", href: "/trust-and-safety" },
   { label: "Resources", href: "#", menu: true },
   { label: "Company", href: "#", menu: true },
 ];
@@ -48,7 +48,7 @@ export const categoryMenu = {
       badge: "pilot",
       badgeLabel: "Pilot",
       description: "Potential first controlled seller-private B2B category; market availability gated.",
-      href: "/apparel-footwear",
+      href: "/categories-apparel-footwear",
     },
     {
       title: "Food & Grocery",
@@ -61,7 +61,7 @@ export const categoryMenu = {
       badge: "overview",
       badgeLabel: "Overview",
       description: "Condition, device status and category-specific requirements.",
-      href: "/consumer-electronics",
+      href: "/categories-consumer-electronics",
     },
     {
       title: "Home & Lifestyle",
@@ -85,7 +85,7 @@ export const categoryMenu = {
 };
 
 export const companyMenu = {
-  overviewLink: { label: "Corporate information", href: "#" },
+  overviewLink: { label: "Corporate information", href: "/company-corporate-information" },
   sectionLabel: "About",
   links: [
     { title: "About Zoiko Surplus", description: "Mission, operating role and global design.", href: "/about" },
@@ -96,7 +96,7 @@ export const companyMenu = {
   card: {
     title: "Zoiko Supply Group Inc.",
     description: "Zoiko Surplus operates within Zoiko Supply Group Inc., a Zoiko Group company.",
-    link: { label: "Corporate Information", href: "#" },
+    link: { label: "Corporate Information", href: "/company-corporate-information" },
   },
 };
 
