@@ -89,9 +89,9 @@ export const companyMenu = {
   sectionLabel: "About",
   links: [
     { title: "About Zoiko Surplus", description: "Mission, operating role and global design.", href: "/about" },
-    { title: "Our Approach", description: "Governed marketplace doctrine and differentiators.", href: "#" },
-    { title: "Industries Served", description: "Current and prospective sectors, clearly differentiated.", href: "#" },
-    { title: "Contact", description: "General contact with privacy-safe inquiry handling.", href: "#" },
+    { title: "Our Approach", description: "Governed marketplace doctrine and differentiators.", href: "/our-approach" },
+    { title: "Industries Served", description: "Current and prospective sectors, clearly differentiated.", href: "/industries-served" },
+    { title: "Contact", description: "General contact with privacy-safe inquiry handling.", href: "/contact" },
   ],
   card: {
     title: "Zoiko Supply Group Inc.",

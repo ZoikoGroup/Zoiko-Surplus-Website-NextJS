@@ -95,8 +95,8 @@ export const footerSections: FooterSection[] = [
     title: "Company",
     links: [
       { label: "About Zoiko Surplus", href: "/about" },
-      { label: "Our Approach", href: "#" },
-      { label: "Industries Served", href: "#" },
+      { label: "Our Approach", href: "/our-approach" },
+      { label: "Industries Served", href: "/industries-served" },
       { label: "Corporate Information", href: "#" },
     ],
   },
