@@ -101,13 +101,13 @@ export const companyMenu = {
 };
 
 export const resourcesMenu = {
-  overviewLink: { label: "Knowledge Center overview", href: "#" },
+  overviewLink: { label: "Knowledge Center overview", href: "/knowledge-center" },
   groups: [
     {
       label: "Guides",
       links: [
-        { title: "Knowledge Center", description: "Educational hub with named authors and review dates.", href: "#" },
-        { title: "Surplus Recovery Guide", description: "Recovery routes and realistic decision variables.", href: "#" },
+        { title: "Knowledge Center", description: "Educational hub with named authors and review dates.", href: "/knowledge-center" },
+        { title: "Surplus Recovery Guide", description: "Recovery routes and realistic decision variables.", href: "/recovery-guide" },
       ],
     },
     {

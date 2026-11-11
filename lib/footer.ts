@@ -85,8 +85,8 @@ export const footerSections: FooterSection[] = [
   {
     title: "Resources",
     links: [
-      { label: "Knowledge Center", href: "#" },
-      { label: "Surplus Recovery\nGuide", href: "#" },
+      { label: "Knowledge Center", href: "/knowledge-center" },
+      { label: "Surplus Recovery\nGuide", href: "/recovery-guide" },
       { label: "Seller Readiness\nChecklist", href: "#" },
       { label: "Frequently Asked\nQuestions", href: "#" },
     ],
