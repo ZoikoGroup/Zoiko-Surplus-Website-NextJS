@@ -74,7 +74,7 @@ export default function CategoryDefinition() {
           {/* Visual Image (hl22.jpg) */}
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[18px] shadow-xs">
             <Image
-              src="/images/home-lifestyle/hl22.jpg"
+              src="/images/home-lifestyle/hl18.jpg"
               alt="Home lighting and lifestyle definition"
               fill
               sizes="100vw"
