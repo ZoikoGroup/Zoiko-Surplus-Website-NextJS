@@ -30,7 +30,7 @@ export const footerSections: FooterSection[] = [
     title: "Surplus Network",
     links: [
       { label: "Network Overview", href: "#" },
-      { label: "Join Partner Network", href: "#" },
+      { label: "Join Partner Network", href: "/join-partner-network" },
       { label: "Logistics Coordination", href: "/logistics-coordination" },
       { label: "Recovery Pathways", href: "/permitted-pathways" },
     ],
@@ -38,9 +38,9 @@ export const footerSections: FooterSection[] = [
   {
     title: "How It Works",
     links: [
-      { label: "How the Platform\nWorks", href: "#" },
+      { label: "How the Platform\nWorks", href: "/how-it-works" },
       { label: "For Enterprise Sellers", href: "#" },
-      { label: "For Verified Buyers", href: "#" },
+      { label: "For Verified Buyers", href: "/become-a-verified-buyer" },
       { label: "For Partners", href: "#" },
     ],
   },
@@ -58,7 +58,7 @@ export const footerSections: FooterSection[] = [
     links: [
       { label: "Buyer Overview", href: "#" },
       { label: "Apply as Verified Buyer", href: "#" },
-      { label: "Buyer Qualification\nGuide", href: "#" },
+      { label: "Buyer Qualification\nGuide", href: "/buyer-qualification" },
       { label: "Access Explained", href: "#" },
     ],
   },
@@ -105,7 +105,7 @@ export const footerSections: FooterSection[] = [
     title: "Help & Contact",
     links: [
       { label: "Help Center", href: "#" },
-      { label: "Contact Us", href: "#" },
+      { label: "Contact Us", href: "/contact" },
       { label: "Report a Concern", href: "#" },
       { label: "Accessibility", href: "#" },
     ],
@@ -150,8 +150,8 @@ export const footerLegalLinks: (FooterLink & { button?: boolean })[] = [
   { label: "Cookie Policy", href: "#" },
   { label: "Cookie Preferences", href: "#", button: true },
   { label: "Accessibility Statement", href: "#" },
-  { label: "Security & Trust", href: "#" },
+  { label: "Security & Trust", href: "/trust-and-safety" },
   { label: "Service Status", href: "#" },
   { label: "Legal Center", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Contact", href: "/contact" },
 ];
