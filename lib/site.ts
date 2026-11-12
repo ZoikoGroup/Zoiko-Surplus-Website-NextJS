@@ -114,7 +114,7 @@ export const resourcesMenu = {
       label: "Readiness",
       links: [
         { title: "Seller Readiness Checklist", description: "Nonbinding onboarding prep — not KYB approval.", href: "#" },
-        { title: "Buyer Qualification Guide", description: "Verification vs market entitlement, explained.", href: "#" },
+        { title: "Buyer Qualification Guide", description: "Verification vs market entitlement, explained.", href: "/buyer-qualification" },
       ],
     },
   ],
@@ -146,7 +146,7 @@ export const solutionsMenu = {
     },
     {
       title: "Surplus Exchange",
-      href: "#",
+      href: "/solution-surplus-exchange",
       description: "Verified participation in seller-controlled markets.",
       links: [
         { title: "Private Marketplaces", description: "Confidential buyer audiences and entitlements.", href: "#" },
@@ -158,7 +158,7 @@ export const solutionsMenu = {
       href: "#",
       description: "Coordination of permitted third-party pathways.",
       links: [
-        { title: "Permitted Pathways", description: "Lawful collection, logistics, redistribution and donation.", href: "#" },
+        { title: "Permitted Pathways", description: "Lawful collection, logistics, redistribution and donation.", href: "/permitted-pathways" },
         { title: "How the model works", description: "Seven governed stages, end to end.", href: "#" },
       ],
     },
