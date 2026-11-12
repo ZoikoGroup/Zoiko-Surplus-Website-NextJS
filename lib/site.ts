@@ -14,7 +14,7 @@ export type NavItem = {
 // Header navigation. Add a page here and it shows up in the header automatically.
 export const navItems: NavItem[] = [
   { label: "Solutions", href: "#", menu: true },
-  { label: "How It Works", href: "#" },
+  { label: "How It Works", href: "/how-it-works" },
   { label: "Categories", href: "#", menu: true },
   { label: "Trust & Safety", href: "/trust-and-safety" },
   { label: "Resources", href: "#", menu: true },
@@ -68,12 +68,14 @@ export const categoryMenu = {
       badge: "overview",
       badgeLabel: "Overview",
       description: "Goods and condition-based qualification.",
+      href:"/home-lifestyle"
     },
     {
       title: "Industrial &\nBusiness Goods",
       badge: "overview",
       badgeLabel: "Overview",
       description: "Commercial excess and category-specific restrictions.",
+      href:"/industries-served"
     },
   ] satisfies CategoryMenuItem[],
   all: {
@@ -127,7 +129,7 @@ export const resourcesMenu = {
     descriptionMobile: ["Candid answers on operating model,", "logistics and access — plus a real", "contact path."],
     links: [
       { label: "Frequently Asked Questions", href: "#" },
-      { label: "Contact Support", href: "#" },
+      { label: "Contact Support", href: "/contact" },
     ],
   },
 };
@@ -141,7 +143,7 @@ export const solutionsMenu = {
       links: [
         { title: "Inventory Qualification", description: "Condition, provenance and category requirements.", href: "#" },
         { title: "Disposition Planning", description: "Seller-led, policy-gated commercial routes.", href: "#" },
-        { title: "Recovery & Evidence", description: "Traceability and outcome documentation.", href: "#" },
+        { title: "Recovery & Evidence", description: "Traceability and outcome documentation.", href: "/recovery-guide" },
       ],
     },
     {
@@ -149,17 +151,17 @@ export const solutionsMenu = {
       href: "/solution-surplus-exchange",
       description: "Verified participation in seller-controlled markets.",
       links: [
-        { title: "Private Marketplaces", description: "Confidential buyer audiences and entitlements.", href: "#" },
-        { title: "Offers & Transactions", description: "Governed offers / orders where enabled.", href: "#" },
+        { title: "Private Marketplaces", description: "Confidential buyer audiences and entitlements.", href: "/solution-private-marketplaces" },
+        { title: "Offers & Transactions", description: "Governed offers / orders where enabled.", href: "/solution-offers-and-transactions" },
       ],
     },
     {
       title: "Surplus Network",
-      href: "#",
+      href: "/solution-surplus-network",
       description: "Coordination of permitted third-party pathways.",
       links: [
         { title: "Permitted Pathways", description: "Lawful collection, logistics, redistribution and donation.", href: "/permitted-pathways" },
-        { title: "How the model works", description: "Seven governed stages, end to end.", href: "#" },
+        { title: "How the model works", description: "Seven governed stages, end to end.", href: "/how-it-works" },
       ],
     },
   ],
@@ -168,7 +170,7 @@ export const solutionsMenu = {
     // The two designs break this copy differently.
     descriptionDesktop: ["See how a lot moves from", "qualification to a resolved,", "documented outcome across", "seven stages."],
     descriptionMobile: ["See how a lot moves from", "qualification to a resolved,", "documented outcome across seven", "stages."],
-    link: { label: "Explore How It Works", href: "#" },
+    link: { label: "Explore How It Works", href: "/how-it-works" },
   },
   bottomLinks: [
     {
@@ -176,14 +178,14 @@ export const solutionsMenu = {
       title: "Partner Participation",
       descriptionDesktop: ["Partner role, requirements and inquiry."],
       descriptionMobile: ["Partner role, requirements and", "inquiry."],
-      href: "#",
+      href: "/partner-participation",
     },
     {
       key: "buyer",
       title: "Become a Verified Buyer",
       descriptionDesktop: ["Application route only — not a retail shopping link."],
       descriptionMobile: ["Application route only — not a", "retail shopping link."],
-      href: "#",
+      href: "/become-a-verified-buyer",
     },
   ],
 } as const;
