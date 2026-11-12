@@ -20,7 +20,7 @@ export const footerSections: FooterSection[] = [
   {
     title: "Surplus Exchange",
     links: [
-      { label: "Exchange Overview", href: "#" },
+      { label: "Exchange Overview", href: "/solution-surplus-exchange" },
       { label: "Private Marketplaces", href: "#" },
       { label: "Offers & Transactions", href: "#" },
       { label: "Buyer Access", href: "#" },
@@ -31,8 +31,8 @@ export const footerSections: FooterSection[] = [
     links: [
       { label: "Network Overview", href: "#" },
       { label: "Join Partner Network", href: "#" },
-      { label: "Logistics Coordination", href: "#" },
-      { label: "Recovery Pathways", href: "#" },
+      { label: "Logistics Coordination", href: "/logistics-coordination" },
+      { label: "Recovery Pathways", href: "/permitted-pathways" },
     ],
   },
   {
@@ -85,9 +85,10 @@ export const footerSections: FooterSection[] = [
   {
     title: "Resources",
     links: [
-      { label: "Knowledge Center", href: "#" },
-      { label: "Surplus Recovery\nGuide", href: "#" },
+      { label: "Knowledge Center", href: "/knowledge-center" },
+      { label: "Surplus Recovery\nGuide", href: "/recovery-guide" },
       { label: "Seller Readiness\nChecklist", href: "#" },
+      { label: "Buyer Qualification\nGuide", href: "/buyer-qualification" },
       { label: "Frequently Asked\nQuestions", href: "#" },
     ],
   },
