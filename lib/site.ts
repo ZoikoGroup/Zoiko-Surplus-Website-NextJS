@@ -161,7 +161,7 @@ export const solutionsMenu = {
       description: "Coordination of permitted third-party pathways.",
       links: [
         { title: "Permitted Pathways", description: "Lawful collection, logistics, redistribution and donation.", href: "/permitted-pathways" },
-        { title: "How the model works", description: "Seven governed stages, end to end.", href: "/how-it-works" },
+        { title: "How the model works", description: "Seven governed stages, end to end.", href: "/how-the-model-works" },
       ],
     },
   ],
