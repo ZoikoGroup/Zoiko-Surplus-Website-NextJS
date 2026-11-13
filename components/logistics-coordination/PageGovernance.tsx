@@ -1,15 +1,21 @@
 import { Clock, Globe, Scale, User, type LucideIcon } from "lucide-react";
 import { SandTile, hanken } from "./shared";
 
-const facts: { icon: LucideIcon; label: string; value: string }[] = [
+export type GovernanceFact = { icon: LucideIcon; label: string; value: string };
+
+const facts: GovernanceFact[] = [
   { icon: User, label: "Owner", value: "Named at approval" },
   { icon: Scale, label: "Reviewers", value: "Legal, safety, logistics ops" },
   { icon: Clock, label: "Claims expiry", value: "Set at approval" },
   { icon: Globe, label: "Market status", value: "Informational" },
 ];
 
-// Page ownership and review strip at the foot of the guide.
 export default function PageGovernance() {
+  return <GovernanceStrip facts={facts} />;
+}
+
+// Page ownership and review strip at the foot of a guide. Also used by How the Model Works.
+export function GovernanceStrip({ facts }: { facts: GovernanceFact[] }) {
   return (
     <section aria-label="Page governance" className={`${hanken} px-5 pb-16 md:px-6 md:pb-24`}>
       {/* One row at every width; scrolls sideways on narrow screens instead of wrapping. */}

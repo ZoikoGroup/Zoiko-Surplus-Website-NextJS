@@ -23,7 +23,7 @@ export const footerSections: FooterSection[] = [
       { label: "Exchange Overview", href: "/solution-surplus-exchange" },
       { label: "Private Marketplaces", href: "#" },
       { label: "Offers & Transactions", href: "#" },
-      { label: "Buyer Access", href: "#" },
+      { label: "Buyer Access", href: "/buyer-access" },
     ],
   },
   {
