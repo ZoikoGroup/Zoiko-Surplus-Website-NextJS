@@ -4,11 +4,29 @@ import Image from "next/image";
 import { useRef, useState, type KeyboardEvent } from "react";
 import { GuideSection, Note, sora, stages } from "./shared";
 
+type Props = {
+  id?: string;
+  num?: string;
+  label?: string;
+  title?: string;
+  lead?: string;
+  /** Per-stage photo swaps, keyed by stage id (e.g. the For Verified Buyers page uses its own Qualify photo). */
+  imageOverrides?: Record<string, { image: string; alt: string }>;
+};
+
 // Arrow-key tabs over the seven stages, following the Logistics Coordination sequence tabs.
-export default function GovernedModel() {
+// Also used, with its own heading, by the For Verified Buyers page.
+export default function GovernedModel({
+  id = "model",
+  num = "01",
+  label = "The governed model",
+  title = stages.map((s) => s.name).join(" → ") + ".",
+  lead = "Select a stage to see what it does in plain English. On a keyboard, use the arrow keys.",
+  imageOverrides = {},
+}: Props) {
   const [active, setActive] = useState(0);
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
-  const stage = stages[active];
+  const stage = { ...stages[active], ...imageOverrides[stages[active].id] };
 
   function select(i: number) {
     setActive(i);
@@ -32,13 +50,7 @@ export default function GovernedModel() {
   }
 
   return (
-    <GuideSection
-      id="model"
-      num="01"
-      label="The governed model"
-      title={stages.map((s) => s.name).join(" → ") + "."}
-      lead="Select a stage to see what it does in plain English. On a keyboard, use the arrow keys."
-    >
+    <GuideSection id={id} num={num} label={label} title={title} lead={lead}>
       <div className="flex flex-col gap-5">
         <div
           role="tablist"
@@ -56,9 +68,9 @@ export default function GovernedModel() {
                 }}
                 role="tab"
                 type="button"
-                id={`hmw-tab-${i}`}
+                id={`${id}-tab-${i}`}
                 aria-selected={isActive}
-                aria-controls="hmw-panel"
+                aria-controls={`${id}-panel`}
                 tabIndex={isActive ? 0 : -1}
                 onClick={() => setActive(i)}
                 className={`flex cursor-pointer flex-col items-start gap-3 rounded-xl border px-4 py-4 text-left transition-colors ${
@@ -80,8 +92,8 @@ export default function GovernedModel() {
 
         <div
           role="tabpanel"
-          id="hmw-panel"
-          aria-labelledby={`hmw-tab-${active}`}
+          id={`${id}-panel`}
+          aria-labelledby={`${id}-tab-${active}`}
           className="grid items-center gap-8 rounded-2xl border border-[#e6e9ef] bg-white p-6 md:p-9 lg:grid-cols-[minmax(0,1fr)_288px]"
         >
           <div className="flex flex-col gap-5">

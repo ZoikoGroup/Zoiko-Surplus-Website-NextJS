@@ -40,7 +40,7 @@ export const footerSections: FooterSection[] = [
     links: [
       { label: "How the Platform\nWorks", href: "/how-it-works" },
       { label: "For Enterprise Sellers", href: "#" },
-      { label: "For Verified Buyers", href: "/become-a-verified-buyer" },
+      { label: "For Verified Buyers", href: "/for-verified-buyers" },
       { label: "For Partners", href: "#" },
     ],
   },
