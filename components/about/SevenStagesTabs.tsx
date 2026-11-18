@@ -68,7 +68,8 @@ const stages: {
   },
 ];
 
-export default function SevenStagesTabs() {
+// `image` lets another page show its own stage photo; About keeps its mobile/desktop pair.
+export default function SevenStagesTabs({ image }: { image?: { src: string; alt: string } } = {}) {
   const [active, setActive] = useState(0);
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const stage = stages[active];
@@ -217,20 +218,26 @@ export default function SevenStagesTabs() {
         </div>
 
         <div className="relative aspect-[316/237] w-full overflow-hidden rounded-[20px] bg-[linear-gradient(150deg,#14294a,#0c2140)] md:h-[223px] md:w-[288px] md:shrink-0 md:rounded-lg">
-          <Image
-            src="/images/about/seven-stages/stage-qualify-mobile.webp"
-            alt=""
-            fill
-            sizes="316px"
-            className="object-cover md:hidden"
-          />
-          <Image
-            src="/images/about/seven-stages/stage-qualify-desktop.webp"
-            alt=""
-            fill
-            sizes="288px"
-            className="hidden object-cover md:block"
-          />
+          {image ? (
+            <Image src={image.src} alt={image.alt} fill sizes="(min-width: 768px) 288px, 100vw" className="object-cover" />
+          ) : (
+            <>
+              <Image
+                src="/images/about/seven-stages/stage-qualify-mobile.webp"
+                alt=""
+                fill
+                sizes="316px"
+                className="object-cover md:hidden"
+              />
+              <Image
+                src="/images/about/seven-stages/stage-qualify-desktop.webp"
+                alt=""
+                fill
+                sizes="288px"
+                className="hidden object-cover md:block"
+              />
+            </>
+          )}
         </div>
       </div>
     </>

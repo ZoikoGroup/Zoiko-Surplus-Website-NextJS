@@ -21,7 +21,7 @@ export const navItems: NavItem[] = [
   { label: "Company", href: "#", menu: true },
 ];
 
-export const headerCta = { label: "Request Enterprise Demo", href: "#" };
+export const headerCta = { label: "Request Enterprise Demo", href: "/request-enterprise-demo" };
 
 export const utilityLinks = [
   { label: "Help", href: "#" },
@@ -68,12 +68,14 @@ export const categoryMenu = {
       badge: "overview",
       badgeLabel: "Overview",
       description: "Goods and condition-based qualification.",
+      href:"/home-lifestyle"
     },
     {
       title: "Industrial &\nBusiness Goods",
       badge: "overview",
       badgeLabel: "Overview",
       description: "Commercial excess and category-specific restrictions.",
+      href:"/industries-served"
     },
   ] satisfies CategoryMenuItem[],
   all: {
@@ -101,20 +103,20 @@ export const companyMenu = {
 };
 
 export const resourcesMenu = {
-  overviewLink: { label: "Knowledge Center overview", href: "#" },
+  overviewLink: { label: "Knowledge Center overview", href: "/knowledge-center" },
   groups: [
     {
       label: "Guides",
       links: [
-        { title: "Knowledge Center", description: "Educational hub with named authors and review dates.", href: "#" },
-        { title: "Surplus Recovery Guide", description: "Recovery routes and realistic decision variables.", href: "#" },
+        { title: "Knowledge Center", description: "Educational hub with named authors and review dates.", href: "/knowledge-center" },
+        { title: "Surplus Recovery Guide", description: "Recovery routes and realistic decision variables.", href: "/recovery-guide" },
       ],
     },
     {
       label: "Readiness",
       links: [
         { title: "Seller Readiness Checklist", description: "Nonbinding onboarding prep — not KYB approval.", href: "#" },
-        { title: "Buyer Qualification Guide", description: "Verification vs market entitlement, explained.", href: "#" },
+        { title: "Buyer Qualification Guide", description: "Verification vs market entitlement, explained.", href: "/buyer-qualification" },
       ],
     },
   ],
@@ -127,7 +129,7 @@ export const resourcesMenu = {
     descriptionMobile: ["Candid answers on operating model,", "logistics and access — plus a real", "contact path."],
     links: [
       { label: "Frequently Asked Questions", href: "#" },
-      { label: "Contact Support", href: "#" },
+      { label: "Contact Support", href: "/contact" },
     ],
   },
 };
@@ -141,25 +143,25 @@ export const solutionsMenu = {
       links: [
         { title: "Inventory Qualification", description: "Condition, provenance and category requirements.", href: "#" },
         { title: "Disposition Planning", description: "Seller-led, policy-gated commercial routes.", href: "#" },
-        { title: "Recovery & Evidence", description: "Traceability and outcome documentation.", href: "#" },
+        { title: "Recovery & Evidence", description: "Traceability and outcome documentation.", href: "/recovery-guide" },
       ],
     },
     {
       title: "Surplus Exchange",
-      href: "#",
+      href: "/solution-surplus-exchange",
       description: "Verified participation in seller-controlled markets.",
       links: [
-        { title: "Private Marketplaces", description: "Confidential buyer audiences and entitlements.", href: "#" },
-        { title: "Offers & Transactions", description: "Governed offers / orders where enabled.", href: "#" },
+        { title: "Private Marketplaces", description: "Confidential buyer audiences and entitlements.", href: "/solution-private-marketplaces" },
+        { title: "Offers & Transactions", description: "Governed offers / orders where enabled.", href: "/solution-offers-and-transactions" },
       ],
     },
     {
       title: "Surplus Network",
-      href: "#",
+      href: "/solution-surplus-network",
       description: "Coordination of permitted third-party pathways.",
       links: [
-        { title: "Permitted Pathways", description: "Lawful collection, logistics, redistribution and donation.", href: "#" },
-        { title: "How the model works", description: "Seven governed stages, end to end.", href: "#" },
+        { title: "Permitted Pathways", description: "Lawful collection, logistics, redistribution and donation.", href: "/permitted-pathways" },
+        { title: "How the model works", description: "Seven governed stages, end to end.", href: "/how-the-model-works" },
       ],
     },
   ],
@@ -176,14 +178,14 @@ export const solutionsMenu = {
       title: "Partner Participation",
       descriptionDesktop: ["Partner role, requirements and inquiry."],
       descriptionMobile: ["Partner role, requirements and", "inquiry."],
-      href: "#",
+      href: "/partner-participation",
     },
     {
       key: "buyer",
       title: "Become a Verified Buyer",
       descriptionDesktop: ["Application route only — not a retail shopping link."],
       descriptionMobile: ["Application route only — not a", "retail shopping link."],
-      href: "#",
+      href: "/become-a-verified-buyer",
     },
   ],
 } as const;

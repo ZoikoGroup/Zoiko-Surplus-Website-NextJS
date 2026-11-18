@@ -20,19 +20,19 @@ export const footerSections: FooterSection[] = [
   {
     title: "Surplus Exchange",
     links: [
-      { label: "Exchange Overview", href: "#" },
+      { label: "Exchange Overview", href: "/solution-surplus-exchange" },
       { label: "Private Marketplaces", href: "#" },
       { label: "Offers & Transactions", href: "#" },
-      { label: "Buyer Access", href: "#" },
+      { label: "Buyer Access", href: "/buyer-access" },
     ],
   },
   {
     title: "Surplus Network",
     links: [
       { label: "Network Overview", href: "#" },
-      { label: "Join Partner Network", href: "#" },
-      { label: "Logistics Coordination", href: "#" },
-      { label: "Recovery Pathways", href: "#" },
+      { label: "Join Partner Network", href: "/join-partner-network" },
+      { label: "Logistics Coordination", href: "/logistics-coordination" },
+      { label: "Recovery Pathways", href: "/permitted-pathways" },
     ],
   },
   {
@@ -40,17 +40,17 @@ export const footerSections: FooterSection[] = [
     links: [
       { label: "How the Platform\nWorks", href: "/how-the-platform-works" },
       { label: "For Enterprise Sellers", href: "/for-enterprise-sellers" },
-      { label: "For Verified Buyers", href: "#" },
-      { label: "For Partners", href: "#" },
+      { label: "For Verified Buyers", href: "/for-verified-buyers" },
+      { label: "For Partners", href: "/for-partners" },
     ],
   },
   {
     title: "Enterprise Sellers",
     links: [
-      { label: "Seller Overview", href: "#" },
-      { label: "Seller Readiness", href: "#" },
-      { label: "Category Eligibility", href: "#" },
-      { label: "Request Enterprise\nDemo", href: "#" },
+      { label: "Seller Overview", href: "/seller-overview" },
+      { label: "Seller Readiness", href: "/seller-readiness-guide" },
+      { label: "Category Eligibility", href: "/category-eligibility" },
+      { label: "Request Enterprise\nDemo", href: "/request-enterprise-demo" },
     ],
   },
   {
@@ -58,7 +58,7 @@ export const footerSections: FooterSection[] = [
     links: [
       { label: "Buyer Overview", href: "#" },
       { label: "Apply as Verified Buyer", href: "#" },
-      { label: "Buyer Qualification\nGuide", href: "#" },
+      { label: "Buyer Qualification\nGuide", href: "/buyer-qualification" },
       { label: "Access Explained", href: "#" },
     ],
   },
@@ -85,9 +85,10 @@ export const footerSections: FooterSection[] = [
   {
     title: "Resources",
     links: [
-      { label: "Knowledge Center", href: "#" },
-      { label: "Surplus Recovery\nGuide", href: "#" },
+      { label: "Knowledge Center", href: "/knowledge-center" },
+      { label: "Surplus Recovery\nGuide", href: "/recovery-guide" },
       { label: "Seller Readiness\nChecklist", href: "#" },
+      { label: "Buyer Qualification\nGuide", href: "/buyer-qualification" },
       { label: "Frequently Asked\nQuestions", href: "#" },
     ],
   },
@@ -104,7 +105,7 @@ export const footerSections: FooterSection[] = [
     title: "Help & Contact",
     links: [
       { label: "Help Center", href: "#" },
-      { label: "Contact Us", href: "#" },
+      { label: "Contact Us", href: "/contact" },
       { label: "Report a Concern", href: "#" },
       { label: "Accessibility", href: "#" },
     ],
@@ -149,8 +150,8 @@ export const footerLegalLinks: (FooterLink & { button?: boolean })[] = [
   { label: "Cookie Policy", href: "#" },
   { label: "Cookie Preferences", href: "#", button: true },
   { label: "Accessibility Statement", href: "#" },
-  { label: "Security & Trust", href: "#" },
+  { label: "Security & Trust", href: "/trust-and-safety" },
   { label: "Service Status", href: "#" },
   { label: "Legal Center", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Contact", href: "/contact" },
 ];
