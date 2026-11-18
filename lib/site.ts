@@ -14,7 +14,7 @@ export type NavItem = {
 // Header navigation. Add a page here and it shows up in the header automatically.
 export const navItems: NavItem[] = [
   { label: "Solutions", href: "#", menu: true },
-  { label: "How It Works", href: "#" },
+  { label: "How It Works", href: "/how-the-platform-works" },
   { label: "Categories", href: "#", menu: true },
   { label: "Trust & Safety", href: "/trust-and-safety" },
   { label: "Resources", href: "#", menu: true },
@@ -168,7 +168,7 @@ export const solutionsMenu = {
     // The two designs break this copy differently.
     descriptionDesktop: ["See how a lot moves from", "qualification to a resolved,", "documented outcome across", "seven stages."],
     descriptionMobile: ["See how a lot moves from", "qualification to a resolved,", "documented outcome across seven", "stages."],
-    link: { label: "Explore How It Works", href: "#" },
+    link: { label: "Explore How It Works", href: "/how-the-platform-works" },
   },
   bottomLinks: [
     {
