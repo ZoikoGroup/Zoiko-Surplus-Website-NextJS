@@ -41,16 +41,16 @@ export const footerSections: FooterSection[] = [
       { label: "How the Platform\nWorks", href: "/how-it-works" },
       { label: "For Enterprise Sellers", href: "#" },
       { label: "For Verified Buyers", href: "/for-verified-buyers" },
-      { label: "For Partners", href: "#" },
+      { label: "For Partners", href: "/for-partners" },
     ],
   },
   {
     title: "Enterprise Sellers",
     links: [
-      { label: "Seller Overview", href: "#" },
-      { label: "Seller Readiness", href: "#" },
-      { label: "Category Eligibility", href: "#" },
-      { label: "Request Enterprise\nDemo", href: "#" },
+      { label: "Seller Overview", href: "/seller-overview" },
+      { label: "Seller Readiness", href: "/seller-readiness-guide" },
+      { label: "Category Eligibility", href: "/category-eligibility" },
+      { label: "Request Enterprise\nDemo", href: "/request-enterprise-demo" },
     ],
   },
   {

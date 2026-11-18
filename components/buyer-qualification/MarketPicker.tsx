@@ -5,7 +5,14 @@ import { Globe } from "lucide-react";
 import { markets } from "./shared";
 
 // Purely informational: picking a market never reveals an availability status on this public page.
-export default function MarketPicker({ source = "approved" }: { source?: string }) {
+export default function MarketPicker({
+  source = "approved",
+  subject = "Availability",
+}: {
+  source?: string;
+  /** What the message says is withheld — "Availability" on buyer pages, "Status" on For Partners. */
+  subject?: string;
+}) {
   const [market, setMarket] = useState("");
   const id = useId();
 
@@ -35,8 +42,8 @@ export default function MarketPicker({ source = "approved" }: { source?: string 
       >
         <Globe aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-[#8a5a14]" strokeWidth={1.75} />
         {market
-          ? `${market}: availability is shown only from ${source} data, and none is shown on this page.`
-          : `No market selected. Availability is shown only from ${source} data.`}
+          ? `${market}: ${subject.toLowerCase()} is shown only from ${source} data, and none is shown on this page.`
+          : `No market selected. ${subject} is shown only from ${source} data.`}
       </p>
     </div>
   );
