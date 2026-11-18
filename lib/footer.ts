@@ -38,8 +38,8 @@ export const footerSections: FooterSection[] = [
   {
     title: "How It Works",
     links: [
-      { label: "How the Platform\nWorks", href: "/how-it-works" },
-      { label: "For Enterprise Sellers", href: "#" },
+      { label: "How the Platform\nWorks", href: "/how-the-platform-works" },
+      { label: "For Enterprise Sellers", href: "/for-enterprise-sellers" },
       { label: "For Verified Buyers", href: "/for-verified-buyers" },
       { label: "For Partners", href: "/for-partners" },
     ],
