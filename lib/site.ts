@@ -21,7 +21,7 @@ export const navItems: NavItem[] = [
   { label: "Company", href: "#", menu: true },
 ];
 
-export const headerCta = { label: "Request Enterprise Demo", href: "#" };
+export const headerCta = { label: "Request Enterprise Demo", href: "/request-enterprise-demo" };
 
 export const utilityLinks = [
   { label: "Help", href: "#" },

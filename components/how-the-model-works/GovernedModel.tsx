@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState, type KeyboardEvent } from "react";
+import { useRef, useState, type KeyboardEvent, type ReactNode } from "react";
 import { GuideSection, Note, sora, stages } from "./shared";
 
 type Props = {
   id?: string;
   num?: string;
   label?: string;
-  title?: string;
+  title?: ReactNode;
   lead?: string;
   /** Per-stage photo swaps, keyed by stage id (e.g. the For Verified Buyers page uses its own Qualify photo). */
   imageOverrides?: Record<string, { image: string; alt: string }>;

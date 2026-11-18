@@ -7,14 +7,23 @@ import { Eyebrow, hanken, sora } from "./shared";
 export type FAQItem = { q: string; a: string };
 
 // Full-width two-column FAQ accordion used at the foot of each category page.
-export default function CategoryFAQ({ num, items }: { num: string; items: FAQItem[] }) {
+export default function CategoryFAQ({
+  num,
+  items,
+  bg = "bg-[#fafbfd]",
+}: {
+  num: string;
+  items: FAQItem[];
+  /** Section background class; pages with alternating bands pass their own. */
+  bg?: string;
+}) {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   const baseId = useId();
   const half = Math.ceil(items.length / 2);
   const columns = [items.slice(0, half), items.slice(half)];
 
   return (
-    <section id="faq" aria-labelledby={`${baseId}-heading`} className={`${hanken} scroll-mt-28 bg-[#fafbfd]`}>
+    <section id="faq" aria-labelledby={`${baseId}-heading`} className={`${hanken} scroll-mt-28 ${bg}`}>
       <div className="mx-auto w-full max-w-[1440px] px-5 py-16 md:px-10 md:py-24 lg:px-24">
         <Eyebrow num={num} label="FAQ" />
         <h2
