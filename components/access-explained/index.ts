@@ -1,0 +1,12 @@
+export { default as Hero } from "./Hero";
+export { default as FiveDecisionGates } from "./FiveDecisionGates";
+export { default as WhoDecidesGateByGate } from "./WhoDecidesGateByGate";
+export { default as PermissionScopeAnatomy } from "./PermissionScopeAnatomy";
+export { default as AccessLifecycleLabels } from "./AccessLifecycleLabels";
+export { default as RestrictionPrecedence } from "./RestrictionPrecedence";
+export { default as InvitationAndExpiry } from "./InvitationAndExpiry";
+export { default as LocaleInformsContent } from "./LocaleInformsContent";
+export { default as CommonOutcomesAndHelp } from "./CommonOutcomesAndHelp";
+export { default as AccessExplainedRelatedGuidance } from "./AccessExplainedRelatedGuidance";
+export { default as AccessExplainedFAQ } from "./AccessExplainedFAQ";
+export { default as AccessExplainedCTA } from "./AccessExplainedCTA";

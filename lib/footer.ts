@@ -59,7 +59,7 @@ export const footerSections: FooterSection[] = [
       { label: "Buyer Overview", href: "#" },
       { label: "Apply as Verified Buyer", href: "#" },
       { label: "Buyer Qualification\nGuide", href: "/buyer-qualification" },
-      { label: "Access Explained", href: "#" },
+      { label: "Access Explained", href: "/access-explained" },
     ],
   },
   {
@@ -76,10 +76,10 @@ export const footerSections: FooterSection[] = [
     title: "Trust & Safety",
     links: [
       { label: "Trust & Safety\nOverview", href: "/trust-and-safety" },
-      { label: "Business Verification", href: "#" },
-      { label: "Product Safety", href: "#" },
-      { label: "Brand Protection", href: "#" },
-      { label: "Report an Issue", href: "#" },
+      { label: "Business Verification", href: "/business-verification" },
+      { label: "Product Safety", href: "/product-safety" },
+      { label: "Brand Protection", href: "/brand-protection" },
+      { label: "Report an Issue", href: "/report-an-issue" },
     ],
   },
   {

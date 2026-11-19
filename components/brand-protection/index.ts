@@ -1,0 +1,14 @@
+export { default as Hero } from "./Hero";
+export { default as RightsAndOwnership } from "./RightsAndOwnership";
+export { default as AuthenticityAndProvenance } from "./AuthenticityAndProvenance";
+export { default as BrandAssetUse } from "./BrandAssetUse";
+export { default as SellerControlledAudiences } from "./SellerControlledAudiences";
+export { default as PermittedRoutesAndArrangements } from "./PermittedRoutesAndArrangements";
+export { default as FiveSeparateDecisions } from "./FiveSeparateDecisions";
+export { default as PolicyBeforeOptimization } from "./PolicyBeforeOptimization";
+export { default as CategoryVariations } from "./CategoryVariations";
+export { default as ThreePartiesDuties } from "./ThreePartiesDuties";
+export { default as RightsChangeAndConfidentiality } from "./RightsChangeAndConfidentiality";
+export { default as BrandProtectionFAQ } from "./BrandProtectionFAQ";
+export { default as BrandProtectionRelatedGuidance } from "./BrandProtectionRelatedGuidance";
+export { default as BrandProtectionCTA } from "./BrandProtectionCTA";
