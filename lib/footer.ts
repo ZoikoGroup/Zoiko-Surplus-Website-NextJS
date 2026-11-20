@@ -89,7 +89,7 @@ export const footerSections: FooterSection[] = [
       { label: "Surplus Recovery\nGuide", href: "/recovery-guide" },
       { label: "Seller Readiness\nChecklist", href: "#" },
       { label: "Buyer Qualification\nGuide", href: "/buyer-qualification" },
-      { label: "Frequently Asked\nQuestions", href: "#" },
+      { label: "Frequently Asked\nQuestions", href: "/frequently-asked-questions" },
     ],
   },
   {
@@ -104,7 +104,7 @@ export const footerSections: FooterSection[] = [
   {
     title: "Help & Contact",
     links: [
-      { label: "Help Center", href: "#" },
+      { label: "Help Center", href: "/help-center" },
       { label: "Contact Us", href: "/contact" },
       { label: "Report a Concern", href: "#" },
       { label: "Accessibility", href: "#" },
