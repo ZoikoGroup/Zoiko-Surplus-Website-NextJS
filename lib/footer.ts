@@ -113,7 +113,7 @@ export const footerSections: FooterSection[] = [
   {
     title: "Markets & Policies",
     links: [
-      { label: "Where We Operate", href: "#" },
+      { label: "Where We Operate", href: "/where-we-operate" },
       { label: "Market Availability", href: "#" },
       { label: "Legal Center", href: "#" },
       { label: "Privacy Notice", href: "#" },
