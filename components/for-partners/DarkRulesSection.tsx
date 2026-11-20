@@ -5,8 +5,8 @@ import { Container, SectionHeading, hanken, sora } from "./shared";
 
 export type Rule = { icon: LucideIcon; title: string; body: string };
 
-// Navy band: unnumbered heading, five mint-icon rule cards, then a wide photo.
-// Used by For Partners, Category Eligibility and the Seller Readiness Guide.
+// Navy band: unnumbered heading, five mint-icon rule cards, then an optional wide photo.
+// Used by For Partners, Category Eligibility, the Seller Readiness Guide and Report a Concern.
 export default function DarkRulesSection({
   id,
   label,
@@ -21,8 +21,8 @@ export default function DarkRulesSection({
   title: ReactNode;
   lead: ReactNode;
   rules: Rule[];
-  image: string;
-  alt: string;
+  image?: string;
+  alt?: string;
 }) {
   return (
     <section
@@ -43,9 +43,11 @@ export default function DarkRulesSection({
             </li>
           ))}
         </ul>
-        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[20px] bg-[#16263f] md:aspect-[1248/416]">
-          <Image src={image} alt={alt} fill sizes="(min-width: 1440px) 1248px, 100vw" className="object-cover" />
-        </div>
+        {image && (
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[20px] bg-[#16263f] md:aspect-[1248/416]">
+            <Image src={image} alt={alt ?? ""} fill sizes="(min-width: 1440px) 1248px, 100vw" className="object-cover" />
+          </div>
+        )}
       </Container>
     </section>
   );
