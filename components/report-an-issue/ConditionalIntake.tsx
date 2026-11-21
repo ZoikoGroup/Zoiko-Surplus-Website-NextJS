@@ -327,7 +327,7 @@ export default function ConditionalIntake() {
               {/* Photo Showcase */}
               <div className="relative h-[250px] lg:h-[280px] w-full overflow-hidden rounded-2xl border border-slate-200/60 bg-slate-100 shadow-sm">
                 <Image
-                  src="/images/Report-an-Issue/r9.jpg"
+                  src="/images/Report-an-Issue/r9.png"
                   alt="Documentation of intake notes and packaging verification"
                   fill
                   className="object-cover"

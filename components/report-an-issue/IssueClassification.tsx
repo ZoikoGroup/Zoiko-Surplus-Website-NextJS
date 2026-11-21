@@ -61,7 +61,7 @@ const concerns = [
     tag: "TYPE 5",
     title: "Other trust concern",
     description: "Anything else, through approved triage.",
-    image: "/images/Report-an-Issue/r6.jpg",
+    image: "/images/Report-an-Issue/r6.png",
     alt: "Enterprise compliance team reviewing triage items",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0c1e38" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

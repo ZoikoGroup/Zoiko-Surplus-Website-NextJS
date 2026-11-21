@@ -47,7 +47,7 @@ const situations = [
   {
     title: "Unsafe goods",
     description: "Pause and report.",
-    image: "/images/Report-an-Issue/r22.png",
+    image: "/images/Report-an-Issue/r22.jpg",
     alt: "Warehouse staff quarantining suspected non-compliant goods",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0c1e38" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -60,7 +60,7 @@ const situations = [
   {
     title: "Brand concern",
     description: "Report. Do not post publicly.",
-    image: "/images/Report-an-Issue/r23.png",
+    image: "/images/Report-an-Issue/r23.jpg",
     alt: "Retail merchandiser verifying brand packaging authenticity",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0c1e38" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

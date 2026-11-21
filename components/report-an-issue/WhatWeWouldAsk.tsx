@@ -8,7 +8,7 @@ const asks = [
     tag: "ASK 1",
     title: "Reporter context",
     description: "Observer, seller, buyer, partner or rights representative.",
-    image: "/images/Report-an-Issue/r10.jpg",
+    image: "/images/Report-an-Issue/r10.png",
     alt: "Observer or representative providing context",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0c1e38" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -23,7 +23,7 @@ const asks = [
     tag: "ASK 2",
     title: "Market context",
     description: "Country or market, if relevant.",
-    image: "/images/Report-an-Issue/r11.jpg",
+    image: "/images/Report-an-Issue/r11.png",
     alt: "Specialists assessing regional market jurisdiction",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0c1e38" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -37,7 +37,7 @@ const asks = [
     tag: "ASK 3",
     title: "Reply preference",
     description: "Only with consent; no expectation.",
-    image: "/images/Report-an-Issue/r12.jpg",
+    image: "/images/Report-an-Issue/r12.png",
     alt: "Optional communication and consent preferences",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0c1e38" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -49,7 +49,7 @@ const asks = [
     tag: "ASK 4",
     title: "Summary and description",
     description: "Plain facts; no guess.",
-    image: "/images/Report-an-Issue/r13.jpg",
+    image: "/images/Report-an-Issue/r13.png",
     alt: "Clear factual documentation of observations",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0c1e38" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

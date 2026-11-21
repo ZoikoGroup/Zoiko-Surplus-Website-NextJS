@@ -111,7 +111,7 @@ export default function EvidenceBoundary() {
           {/* Wide Photo Showcase */}
           <div className="relative mt-8 h-[340px] lg:h-[400px] w-full overflow-hidden rounded-2xl border border-white/10 bg-[#0d1c31] shadow-xl">
             <Image
-              src="/images/Report-an-Issue/r14.jpg"
+              src="/images/Report-an-Issue/r14.png"
               alt="Compliance specialist reviewing records on laptop in warehouse"
               fill
               className="object-cover"
