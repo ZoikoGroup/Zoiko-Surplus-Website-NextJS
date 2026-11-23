@@ -59,7 +59,7 @@ export const footerSections: FooterSection[] = [
       { label: "Buyer Overview", href: "#" },
       { label: "Apply as Verified Buyer", href: "#" },
       { label: "Buyer Qualification\nGuide", href: "/buyer-qualification" },
-      { label: "Access Explained", href: "#" },
+      { label: "Access Explained", href: "/access-explained" },
     ],
   },
   {
@@ -76,10 +76,10 @@ export const footerSections: FooterSection[] = [
     title: "Trust & Safety",
     links: [
       { label: "Trust & Safety\nOverview", href: "/trust-and-safety" },
-      { label: "Business Verification", href: "#" },
-      { label: "Product Safety", href: "#" },
-      { label: "Brand Protection", href: "#" },
-      { label: "Report an Issue", href: "#" },
+      { label: "Business Verification", href: "/business-verification" },
+      { label: "Product Safety", href: "/product-safety" },
+      { label: "Brand Protection", href: "/brand-protection" },
+      { label: "Report an Issue", href: "/report-an-issue" },
     ],
   },
   {
@@ -89,7 +89,7 @@ export const footerSections: FooterSection[] = [
       { label: "Surplus Recovery\nGuide", href: "/recovery-guide" },
       { label: "Seller Readiness\nChecklist", href: "#" },
       { label: "Buyer Qualification\nGuide", href: "/buyer-qualification" },
-      { label: "Frequently Asked\nQuestions", href: "#" },
+      { label: "Frequently Asked\nQuestions", href: "/frequently-asked-questions" },
     ],
   },
   {
@@ -104,7 +104,7 @@ export const footerSections: FooterSection[] = [
   {
     title: "Help & Contact",
     links: [
-      { label: "Help Center", href: "#" },
+      { label: "Help Center", href: "/help-center" },
       { label: "Contact Us", href: "/contact" },
       { label: "Report a Concern", href: "/report-a-concern" },
       { label: "Accessibility", href: "#" },
@@ -113,7 +113,7 @@ export const footerSections: FooterSection[] = [
   {
     title: "Markets & Policies",
     links: [
-      { label: "Where We Operate", href: "#" },
+      { label: "Where We Operate", href: "/where-we-operate" },
       { label: "Market Availability", href: "#" },
       { label: "Legal Center", href: "#" },
       { label: "Privacy Notice", href: "#" },
