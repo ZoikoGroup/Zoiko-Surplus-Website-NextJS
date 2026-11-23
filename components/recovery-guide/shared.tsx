@@ -71,6 +71,7 @@ export function GuideSection({
   lead,
   children,
   className = "",
+  leadClassName,
 }: {
   id: string;
   num?: string;
@@ -79,11 +80,13 @@ export function GuideSection({
   lead?: ReactNode;
   children: ReactNode;
   className?: string;
+  /** Overrides the lead's default 700px max-width. */
+  leadClassName?: string;
 }) {
   return (
     <section id={id} aria-labelledby={`${id}-heading`} className={`${hanken} scroll-mt-28 py-8 md:py-12 ${className}`}>
       <Container className="flex flex-col gap-10 md:gap-14">
-        <SectionHeading id={`${id}-heading`} num={num} label={label} title={title} lead={lead} titleClassName="max-w-none" />
+        <SectionHeading id={`${id}-heading`} num={num} label={label} title={title} lead={lead} titleClassName="max-w-none" leadClassName={leadClassName} />
         {children}
       </Container>
     </section>

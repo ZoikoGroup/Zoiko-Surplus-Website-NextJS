@@ -115,9 +115,9 @@ export const footerSections: FooterSection[] = [
     links: [
       { label: "Where We Operate", href: "/where-we-operate" },
       { label: "Market Availability", href: "#" },
-      { label: "Legal Center", href: "#" },
-      { label: "Privacy Notice", href: "#" },
-      { label: "Terms of Use", href: "#" },
+      { label: "Legal Center", href: "/legal-center" },
+      { label: "Privacy Notice", href: "/privacy-notice" },
+      { label: "Terms of Use", href: "/terms-of-use" },
     ],
   },
 ];
@@ -145,13 +145,13 @@ export const footerOffices = [
 ] as const;
 
 export const footerLegalLinks: (FooterLink & { button?: boolean })[] = [
-  { label: "Privacy Notice", href: "#" },
-  { label: "Terms of Use", href: "#" },
+  { label: "Privacy Notice", href: "/privacy-notice" },
+  { label: "Terms of Use", href: "/terms-of-use" },
   { label: "Cookie Policy", href: "#" },
   { label: "Cookie Preferences", href: "#", button: true },
   { label: "Accessibility Statement", href: "#" },
   { label: "Security & Trust", href: "/trust-and-safety" },
   { label: "Service Status", href: "#" },
-  { label: "Legal Center", href: "#" },
+  { label: "Legal Center", href: "/legal-center" },
   { label: "Contact", href: "/contact" },
 ];

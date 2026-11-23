@@ -15,3 +15,11 @@ body {
   color: var(--foreground);
   font-family: var(--font-sora), system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
+
+/* "Print this page" (Terms of Use, Privacy Notice): print the page content only, without site navigation. */
+@media print {
+  body:has(.print-page) header,
+  body:has(.print-page) footer {
+    display: none;
+  }
+}

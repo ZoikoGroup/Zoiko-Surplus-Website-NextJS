@@ -65,7 +65,7 @@ export default function Header() {
   return (
     <>
       {/* Utility bar: mobile design only */}
-      <div className="bg-[#0c2140] md:hidden">
+      <div className="bg-[#0c2140] md:hidden print:hidden">
         <div className="mx-auto flex max-w-[1280px] flex-col items-start justify-center gap-4 px-[22px]">
           <p className="flex h-[20.8px] items-center gap-2 text-[13px] leading-[20.8px] text-[#a7bad0]">
             <span className="flex size-[15px] shrink-0 items-center justify-center">

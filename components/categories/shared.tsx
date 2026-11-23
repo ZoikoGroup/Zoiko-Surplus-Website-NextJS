@@ -32,6 +32,7 @@ export function SectionHeading({
   id,
   tone = "light",
   titleClassName = "max-w-[560px]",
+  leadClassName = "max-w-[700px]",
 }: {
   num?: string;
   label: string;
@@ -40,6 +41,7 @@ export function SectionHeading({
   id: string;
   tone?: Tone;
   titleClassName?: string;
+  leadClassName?: string;
 }) {
   const dark = tone === "dark";
   return (
@@ -55,7 +57,7 @@ export function SectionHeading({
       </h2>
       {lead && (
         <p
-          className={`${sora} max-w-[700px] text-base leading-7 md:text-xl md:leading-8 ${
+          className={`${sora} ${leadClassName} text-base leading-7 md:text-xl md:leading-8 ${
             dark ? "text-[#d5dceb]" : "text-[#4b5b75]"
           }`}
         >
