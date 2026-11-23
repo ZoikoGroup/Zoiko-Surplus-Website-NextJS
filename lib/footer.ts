@@ -106,7 +106,7 @@ export const footerSections: FooterSection[] = [
     links: [
       { label: "Help Center", href: "#" },
       { label: "Contact Us", href: "/contact" },
-      { label: "Report a Concern", href: "#" },
+      { label: "Report a Concern", href: "/report-a-concern" },
       { label: "Accessibility", href: "#" },
     ],
   },
